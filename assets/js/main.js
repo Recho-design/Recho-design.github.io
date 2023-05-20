@@ -1,20 +1,3 @@
-$(function () {
-	$('.streamersbox1').liMarquee({
-		hoverstop: false
-	});
-});
-
-$(function () {
-	$('.streamersbox2').liMarquee({
-		hoverstop: false
-	});
-});
-
-$(function () {
-	$('.nav-link').hover(function () { $(this).addClass('hover-choose'); },
-		function () { $(this).removeClass('hover-choose'); })
-});
-
 // 字体大小
 
 function fontSize() {

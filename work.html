@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/liMarquee.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/sidebar.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/work.css">
+  <link rel="stylesheet" href="assets/css/isolde.css">
+  <link rel="stylesheet" href="assets/css/imglightbox.css">
+  <link rel="stylesheet" href="assets/css/videomodal.css">
+  <!-- JQuery -->
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <script src="assets/js/load-nav.js"></script>
+  <script src="assets/js/imglightbox.js"></script>
+  <script src="assets/js/card-animation.js"></script>
+</head>
+
+<body>
+  <!-- 弹出视频窗口 -->
+  <div id="video-D5_1" class="model-container">
+    <iframe src="//player.bilibili.com/player.html?aid=202579142&bvid=BV12a411A7JJ&cid=250363655&page=1" scrolling="no"
+      border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+      <button class="btn btn-close btn-close-white" onclick="closeDiv()"></button>
+  </div>
+
+  <!-- 灯箱 -->
+  <div id="imgLightbox" onclick="imgLightbox.close();">
+    <div id="imgLightbox-button" onclick="imgLightbox.close();">&Cross;</div>
+  </div>
+  <div class="page-container">
+    <!-- 顶栏 -->
+    <div id="navbar-container"></div>
+    <!-- 侧边栏 -->
+    <div class="offcanvas offcanvas-end" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </h5>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-list">
+          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>关于我</a>
+          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>我的作品</a>
+          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>我要约稿</a>
+          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>Q&amp;A</a>
+        </div>
+        <div class="offcanvas-contact">
+          <a href="http://wpa.qq.com/msgrd?v=3&uin=841712842&site=qq&menu=yes" target="_blank"><img
+              src="assets/img/svg/qq_block .svg"></a>
+          <a href="https://weibo.com/u/1930149341" target="_blank"><img src="assets/img/svg/weibo_block.svg"></a>
+          <a href="https://nzkiss.lofter.com/" target="_blank"><img src="assets/img/svg/lofter_block.svg"></a>
+        </div>
+      </div>
+    </div>
+    <h1>MY&nbspWORK.</h1>
+    <div class="container">
+      <div class="wrapper">
+        <ul class="sortable-nav nav">
+          <li>
+            <a data-isolde-link="all" class="nav-tab">
+              All
+            </a>
+          </li>
+          <li>
+            <a data-isolde-link="illustration" class="nav-tab">
+              插画
+            </a>
+          </li>
+          <li>
+            <a data-isolde-link="design" class="nav-tab">
+              设计
+            </a>
+          </li>
+          <li>
+            <a data-isolde-link="animation" class="nav-tab">
+              动画
+            </a>
+          </li>
+        </ul>
+        <div id="isolde" class="isolde-default">
+          <div data-isolde-el="illustration">
+            <div class="card" data-text="chenbaijinqu">
+              <img class="card-picture" src="assets/img/pic/Illustration/T3J]PD86I]O(0XK2[VQ9(2W.jpg">
+            </div>
+          </div>
+          <div data-isolde-el="design">
+            <div class="card">
+              <div class="card" data-text="#1">
+                <img class="card-picture" src="assets/img/pic/Design/LEaveIt_的微博_微博.jpg">
+              </div>
+            </div>
+          </div>
+          <div data-isolde-el="funny">
+            <div class="card">
+              <img class="card-picture" src="images/item-3.jpg" alt="">
+              <div class="card-infos">
+                <h2 class="card-title">Example 3</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, placeat voluptate, fuga tenetur eos
+                  ducimus animi porro...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-isolde-el="flatty">
+            <div class="card">
+              <img class="card-picture" src="images/item-4.jpg" alt="">
+              <div class="card-infos">
+                <h2 class="card-title">Example 4</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit doloremque quisquam, obcaecati unde
+                  nam est quos...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-isolde-el="flatty">
+            <div class="card">
+              <img class="card-picture" src="images/item-5.jpg" alt="">
+              <div class="card-infos">
+                <h2 class="card-title">Example 5</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse corporis hic minima nisi
+                  reprehenderit...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-isolde-el="funny">
+            <div class="card">
+              <img class="card-picture" src="images/item-6.jpg" alt="">
+              <div class="card-infos">
+                <h2 class="card-title">Example 6</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptatibus, id, deserunt
+                  inventore...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-isolde-el="flatty">
+            <div class="card">
+              <img class="card-picture" src="images/item-7.jpg" alt="">
+              <div class="card-infos">
+                <h2 class="card-title">Example 7</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum enim beatae vero culpa, fuga, magni
+                  sunt dolores nam...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-isolde-el="flatty">
+            <div class="card">
+              <img class="card-picture" src="images/item-8.jpg" alt="">
+              <div class="card-infos">
+                <h2 class="card-title">Example 8</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam, blanditiis
+                  necessitatibus...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div data-isolde-el="animation">
+            <div id="D5_1" onclick="toggleDiv()" class="card" data-text="D5_1">
+              <img class="card-animation" src="assets/img/pic/Animation/D5_1.jpg" alt="Preview Image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </main>
+  </div>
+  <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+  <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+  <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.liMarquee.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- 瀑布流排布 -->
+  <script type="module">
+    import isolde from './assets/js/isolde.js';
+    const isoldejs = new isolde();
+  </script>
+  <!-- 放大效果 -->
+  <script>
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      const img = card.querySelector('.card-picture');
+      const imgSrc = img.getAttribute('src');
+
+      card.addEventListener('click', () => {
+        imgLightbox.open(imgSrc);
+      });
+    });
+  </script>
+</body>
+
+</html>

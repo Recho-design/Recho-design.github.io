@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "标小智无界黑";
+  src: url(/assets/fonts/标小智无界黑.ttf);
+}
+html {
+  font-size: 1rem;
+}
+body {
+  background-color: #1a1a1a;
+}
+a {
+  text-decoration: none;
+}
+.page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+  z-index: 998;
+}
+.bg-1st {
+  background-color: #6a50ff;
+}

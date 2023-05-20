@@ -10,69 +10,23 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="/assets/css/liMarquee.css">
+  <link rel="stylesheet" href="/assets/css/normalize.css">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/navbar.css">
+  <link rel="stylesheet" href="/assets/css/decoration.css">
+  <link rel="stylesheet" href="/assets/css/sidebar.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
   <link rel="stylesheet" href="/assets/css/animate.css">
 
   <!-- JQuery -->
   <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/assets/js/load-nav.js"></script>
 </head>
 
 <body>
   <div class="page-container">
     <!-- 顶栏 -->
-    <nav class="navbar navbar-expand-sm bg-1st fixed-top">
-      <a class="navbar-brand" href="/index.html">
-        <img src="/assets/img/svg/资源 1.svg" id="Logo">
-      </a>
-      <!-- Links -->
-      <ul class="navbar-nav d-none d-md-flex">
-        <li class="nav-item">
-          <a class="nav-link" href="#">关于我</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">我的作品</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">我要约稿</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Q&amp;A</a>
-        </li>
-      </ul>
-      <form class="navbar-brand navbar-contact d-none d-md-flex">
-        <a href="http://wpa.qq.com/msgrd?v=3&uin=841712842&site=qq&menu=yes" target="_blank"><img
-            src="/assets/img/svg/qq.svg"></a>
-        <a href="https://weibo.com/u/1930149341" target="_blank"><img src="assets/img/svg/weibo.svg"></a>
-        <a href="https://nzkiss.lofter.com/" target="_blank"><img src="assets/img/svg/lofter.svg"></a>
-      </form>
-      <div class="sidebar-btn">
-        <button class="bi bi-justify btn btn-primary" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-      </div>
-    </nav>
-    <!-- 侧边栏 -->
-    <div class="offcanvas offcanvas-end" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </h5>
-      </div>
-      <div class="offcanvas-body">
-        <div class="offcanvas-list">
-          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>关于我</a>
-          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>我的作品</a>
-          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>我要约稿</a>
-          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>Q&amp;A</a>
-        </div>
-        <div class="offcanvas-contact">
-          <a href="http://wpa.qq.com/msgrd?v=3&uin=841712842&site=qq&menu=yes" target="_blank"><img
-              src="/assets/img/svg/qq_block .svg"></a>
-          <a href="https://weibo.com/u/1930149341" target="_blank"><img src="assets/img/svg/weibo_block.svg"></a>
-          <a href="https://nzkiss.lofter.com/" target="_blank"><img src="assets/img/svg/lofter_block.svg"></a>
-        </div>
-      </div>
-    </div>
-
+    <div id="navbar-container"></div>
     <!-- 内容 -->
     <div class="main">
       <table class="table table-bordered" id="table-01">
@@ -187,6 +141,20 @@
   <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
   <script src="/assets/js/jquery.liMarquee.js"></script>
   <script src="/assets/js/main.js"></script>
+  <!-- 动画 -->
+  <script>$(function () {
+      $('.streamersbox1').liMarquee({
+        hoverstop: false
+      });
+    });
+
+    $(function () {
+      $('.streamersbox2').liMarquee({
+        hoverstop: false
+      });
+    });
+  </script>
+
 </body>
 
 </html>

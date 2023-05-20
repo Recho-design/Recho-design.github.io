@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "标小智无界黑";
+  src: url(/assets/fonts/标小智无界黑.ttf);
+}
+.main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4rem 0 10 0;
+  padding: 5rem 5rem;
+  text-align: center;
+}
+.card {
+  border-radius: 0;
+  padding: 0;
+}
+.card-1 {
+  position: absolute;
+  z-index: 2;
+  top: 11rem;
+  left: 10rem;
+  border: 0.3rem solid white;
+}
+.IMAGE {
+  height: 2rem;
+  width: 13rem;
+  background-color: #6a50ff;
+}
+.IMAGE p {
+  display: inline;
+  line-height: 200%;
+  font-weight: 700;
+  color: white;
+}
+.IMAGE p:nth-child(2) {
+  margin-left: 6rem;
+}
+.profilephoto {
+  height: 13rem;
+  width: 13rem;
+  background-color: #e0ff70;
+  border-top: 0.3rem solid white;
+  border-bottom: 0.3rem solid white;
+}
+.profilephoto img {
+  height: 12.7rem;
+  width: 13rem;
+}
+.card-2 {
+  position: absolute;
+  z-index: 1;
+  top: 23rem;
+  left: 20rem;
+  width: 22rem;
+  height: 18.1875rem;
+  padding: 1.5rem;
+  background-color: #e0ff70;
+  box-shadow: 0.625rem 0.625rem 0 white;
+}
+.card-2 p:nth-child(1) {
+  text-align: right;
+  font: normal 700 2.125rem "Arial";
+  color: #333333;
+  letter-spacing: 0.1rem;
+}
+.card-2 hr {
+  margin: 0 auto;
+  text-align: center;
+  width: 18.6rem;
+  border: 0.1rem solid #1a1a1a;
+}
+.card-2 p:nth-child(3) {
+  margin-top: 1rem;
+  font: normal 400 1rem "Arial";
+  color: #333333;
+  text-align: left;
+  letter-spacing: 0.1rem;
+  line-height: 1.8;
+}
+.aboutme-decorated {
+  position: absolute;
+  left: 10rem;
+  bottom: 5rem;
+  width: 34.375rem;
+  height: 12.5rem;
+  line-height: 1;
+}
+.aboutme-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.aboutme-decorated .aboutme-text p {
+  font: 4.625rem "标小智无界黑";
+  line-height: 1;
+  color: white;
+  text-align: left;
+}
+.right-row {
+  display: inline-block;
+  margin-left: 2rem;
+  vertical-align: middle;
+}
+.right-row p {
+  font: 7rem "标小智无界黑";
+  line-height: 1;
+  color: white;
+}
+.main-text {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  bottom: 0;
+  width: 65.25rem;
+  height: 51.75rem;
+  display: flex;
+  flex-direction: column;
+  border-width: 0.125rem 0 0 0.125rem;
+  border-color: white;
+  border-style: solid;
+}
+.guanyuwo {
+  width: 37.5rem;
+  height: 14rem;
+  border-width: 0 0.125rem 0 0;
+  border-color: white;
+  border-style: solid;
+}
+.guanyuwo p {
+  display: inline-block;
+  margin: 0 -2rem 0 0;
+  font: 7rem "标小智无界黑";
+  color: white;
+  letter-spacing: 2rem;
+}
+.business-field {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.6rem solid white;
+}
+.business-field p {
+  margin: 4rem 0 0 6rem;
+  font: 1.5rem "Arial";
+  color: white;
+  text-align: left;
+}
+.scroll-bar {
+  position: relative;
+  width: 3rem;
+  border-left: 0.125rem solid white;
+}
+.scroll-fill {
+  position: absolute;
+  bottom: 0;
+  height: 15rem;
+  width: 3rem;
+  background-color: #e0ff70;
+}
+.warning-icon {
+  position: absolute;
+  right: 11rem;
+  bottom: 45rem;
+  width: 10rem;
+  rotate: 17deg;
+}
+.warning-icon .object svg {
+  stroke-width: 0.625rem;
+}

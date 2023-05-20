@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<!-- version 1.0.1 -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>imgLightbox.js图片放大插件 www.bootstrapmb.com</title>
+    <meta name="Author" content="Czigler Ferenc">
+
+    <link href="assets/css/imglightbox.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/imglightbox.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Insert these divs into the page: -->
+    <div id="imgLightbox" onclick="imgLightbox.close();">
+        <div id="imgLightbox-button" onclick="imgLightbox.close();">&Cross;</div>
+    </div>
+
+    <h1>imgLightbox</h1>
+
+
+    <!-- Image loading into the lightbox samples: -->
+    <p><img src="assets/1.jpg" style="width: 400px; height: auto;" onclick="imgLightbox.open('assets/1.jpg');"></p>
+    <p><img src="assets/2.jpg" style="width: 400px; height: auto;" onclick="imgLightbox.open('assets/2.jpg');"></p>
+    <p>Small size image:</p>
+    <p><img src="assets/3.jpg" onclick="imgLightbox.open('assets/3.jpg');"></p>
+
+</body>
+</html>

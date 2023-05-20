@@ -1,0 +1,69 @@
+@import "font.less";
+@import "color.less";
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+// 顶部导航栏
+.navbar {
+    flex: 0 0 auto;
+    flex-shrink: 0;
+    height: 4rem;
+    padding: 0 7%;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: .2rem solid white;
+}
+
+#Logo {
+    height: 4rem;
+}
+
+.nav-link {
+    padding: .5rem 1rem;
+    color: white;
+    font-family: @font-1st;
+    font-size: 1.5rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+}
+
+
+.nav-item {
+    position: relative;
+    margin: 0 2rem;
+}
+
+.hover-choose {
+    background: url(/assets/img/svg/choose.svg) no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: @color-2nd;
+}
+
+.navbar-contact {
+    margin: 0;
+}
+
+form img {
+    height: 30px;
+    margin: .2rem;
+}
+
+#hover-choose {
+    display: inline;
+    position: absolute;
+    left: 0;
+    margin-right: 5px;
+    width: 121px;
+    height: 43px;
+}

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "标小智无界黑";
+  src: url(/assets/fonts/标小智无界黑.ttf);
+}
+.btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 3rem;
+}
+.offcanvas {
+  width: 30rem;
+  padding-left: 8%;
+}
+.btn-close {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+.offcanvas-list {
+  margin-top: 25%;
+}
+.offcanvas-link {
+  display: block;
+  font-family: "标小智无界黑";
+  color: #6a50ff;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+.offcanvas-contact {
+  margin-top: 6rem;
+}
+.offcanvas-contact img {
+  width: 4rem;
+  margin-right: 1rem;
+}

@@ -1,0 +1,107 @@
+@import "font.less";
+@import "color.less";
+
+a {
+    text-decoration: none;
+    color: #111;
+    cursor: pointer;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin: 10rem 15rem 0 15rem;
+    font-family: @font-1st;
+    font-size: 5rem;
+    color: @color-text-background;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+    margin: 1rem auto;
+    padding: 0 10px;
+}
+
+.wrapper {
+    padding: 40px 0;
+}
+
+.card {
+    background-color: @color-background;
+    border-color: @color-background;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    transition: box-shadow .2s ease-in-out;
+}
+
+//蒙版
+.card:hover::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//图片名称
+.card[data-text="chenbaijinqu"]:hover::before {
+    content: "尘白禁区";
+}
+
+.card[data-text="#1"]:hover::before {
+    content: "占位";
+}
+
+.card[data-text="D5_1"]:hover::before {
+    font-family: 'Bootstrap-icons';
+    font-size: 3rem;
+    content: '\F4F2';
+}
+
+//图片
+
+.card-picture,
+.card-animation {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+//分类
+.sortable-nav {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.nav-tab {
+    padding: 0 20px 4px;
+    color: @color-text-background;
+    font-size: 1.5rem;
+    font-family: @font-1st;
+    display: block;
+    border-bottom: 0.2rem solid transparent;
+}
+
+.nav-tab.is-active {
+    color: @color-2nd;
+    border-color: @color-2nd;
+}

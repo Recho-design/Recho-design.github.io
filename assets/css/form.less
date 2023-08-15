@@ -1,0 +1,776 @@
+@import "font.less";
+@import "color.less";
+
+
+/*-- main --*/
+.w3layouts-main {
+    padding: 2rem 0 0;
+}
+
+.agilesign-form {
+    width: 40%;
+    margin: 15rem 0 0 60rem;
+
+}
+
+.agileits-top {
+    padding: 1rem 3rem 0;
+}
+
+.agilesign-form textarea[type="text"],
+.agilesign-form input[type="text"] {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.8rem .5rem;
+    border: 0;
+    width: 96%;
+    border-bottom: 1px solid #fff;
+    background: none;
+    -webkit-appearance: none;
+}
+
+/*-- input-effect --*/
+.styled-input textarea:focus~label,
+.styled-input textarea:valid~label,
+.styled-input input:focus~label,
+.styled-input input:valid~label {
+    font-size: 1rem;
+    color: #FF9800;
+    top: -1.5rem;
+    -webkit-transition: all 0.125s ease;
+    -moz-transition: all 0.125s ease;
+    -o-transition: all 0.125s ease;
+    -ms-transition: all 0.125s ease;
+    transition: all 0.125s ease;
+}
+
+.styled-input {
+    display: inline-block;
+    width: 40%;
+    margin: 2rem 0 1rem;
+    position: relative;
+}
+
+.styled-input label {
+    color: #fff;
+    padding: 0.8rem .5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    line-height: 1rem;
+}
+
+.styled-input textarea~span,
+.styled-input input~span {
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FF9800;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 0.125s ease;
+    -moz-transition: all 0.125s ease;
+    -o-transition: all 0.125s ease;
+    -ms-transition: all 0.125s ease;
+    transition: all 0.125s ease;
+}
+
+.styled-input textarea:focus,
+.styled-input input:focus {
+    outline: 0;
+}
+
+.styled-input textarea:focus~span,
+.styled-input input:focus~span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    -moz-transition: all 0.075s ease;
+    -o-transition: all 0.075s ease;
+    -ms-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+
+}
+
+
+// 详细信息
+
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+  }
+  
+.w3_styled_input_textarea {
+    width: 83%;
+    display: flex;
+}
+
+
+
+
+/*-- responsive-design --*/
+@media(max-width:1440px) {
+    .agileits-bottom input[type="submit"] {
+        width: 106.8%;
+    }
+}
+
+@media(max-width:1366px) {
+    .agilesign-form {
+        width: 37%;
+        margin: 3rem auto;
+    }
+}
+
+@media(max-width:1280px) {
+    .agilesign-form {
+        width: 40%;
+    }
+}
+
+@media(max-width:1080px) {
+    .agilesign-form {
+        width: 48%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media(max-width:1024px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .agilesign-form {
+        width: 50%;
+        margin: 2rem auto;
+    }
+}
+
+@media(max-width:991px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .agilesign-form {
+        width: 52%;
+    }
+}
+
+@media(max-width:900px) {
+    .agilesign-form {
+        width: 56%;
+    }
+}
+
+@media(max-width:800px) {
+    .agilesign-form {
+        width: 63%;
+    }
+
+    .agileits-top {
+        padding: 0.2rem 2.5rem 0;
+    }
+
+    .agileits-bottom input[type="submit"] {
+        font-size: 1.3rem;
+        margin-left: -0.8rem;
+    }
+
+    .agileits-bottom {
+        margin: 2.5rem -2.57rem 0;
+    }
+}
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .agileits-bottom input[type="submit"] {
+        width: 107%;
+    }
+}
+
+@media (max-width: 736px) {
+    .agileits-bottom input[type="submit"] {
+        width: 107.5%;
+    }
+}
+
+@media(max-width:667px) {
+    .agileits-bottom input[type="submit"] {
+        width: 108%;
+        font-size: 1.1rem;
+        margin-left: -0.9rem;
+    }
+
+    .agilesign-form input[type="text"] {
+        width: 95%;
+    }
+
+    .agileits-bottom:before {
+        left: -16px;
+    }
+
+    .agileits-bottom:after {
+        right: -16px;
+    }
+}
+
+@media(max-width:640px) {
+    .agilesign-form {
+        width: 67%;
+    }
+
+    .agileits-bottom input[type="submit"] {
+        width: 107.5%;
+    }
+}
+
+@media(max-width:600px) {
+    .agileits-bottom input[type="submit"] {
+        width: 108.5%;
+    }
+
+    .copyright p {
+        padding: 0 1rem;
+    }
+}
+
+@media(max-width:480px) {
+    .w3layouts-main {
+        padding: 1.5rem 0 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .agileits-top {
+        padding: 0.2rem 1.5rem 0;
+    }
+
+    .agilesign-form input[type="text"] {
+        font-size: 0.9rem;
+        padding: 0.6rem .5rem;
+    }
+
+    .styled-input label {
+        padding: 0.6rem .5rem;
+        font-size: 0.9rem;
+    }
+
+    .styled-input input:focus~label,
+    .styled-input input:valid~label {
+        font-size: .8rem;
+    }
+
+    .wthree-text {
+        margin-top: 2rem;
+    }
+
+    .wthree-text input[type="checkbox"]+label {
+        font-size: 0.9rem;
+    }
+
+    .wthree-text input[type="checkbox"]+label span:first-child {
+        width: 12px;
+        height: 12px;
+    }
+
+    .wthree-text ul li a {
+        font-size: 0.9rem;
+    }
+
+    .agileits-bottom {
+        margin: 2rem -1.6rem 0;
+    }
+
+    .agileits-bottom input[type="submit"] {
+        font-size: 1rem;
+        margin-left: -0.6rem;
+        width: 105.3%;
+        padding: 0.8rem 0;
+    }
+
+    .w3agile-btm {
+        padding: 1.5rem 0;
+    }
+
+    .agilesign-form {
+        width: 80%;
+    }
+
+    .copyright p {
+        font-size: 0.9rem;
+    }
+
+    .agilesign-form p {
+        font-size: 0.9rem;
+    }
+
+    .agileits-bottom:before {
+        top: -11px;
+        left: -10px;
+        border-top: 11px solid transparent;
+        border-right: 11px solid #fff;
+    }
+
+    .agileits-bottom:after {
+        top: -11px;
+        right: -10px;
+        border-left: 11px solid #fff;
+        border-top: 11px solid transparent;
+    }
+
+    .wthree-text input[type="checkbox"]:checked+label span:first-child:before {
+        left: 1px;
+        top: 1px;
+    }
+}
+
+@media(max-width:414px) {
+    .styled-input {
+        margin: 1.5rem 0 1rem;
+    }
+
+    .copyright p {
+        padding: 0 1rem;
+    }
+
+    .agileits-bottom:before {
+        top: -10px;
+        left: -10px;
+        border-top: 10px solid transparent;
+        border-right: 10px solid #fff;
+    }
+
+    .agileits-bottom:after {
+        top: -10px;
+        right: -10px;
+        border-left: 10px solid #fff;
+        border-top: 10px solid transparent;
+    }
+
+    .agileits-bottom input[type="submit"] {
+        width: 106%;
+    }
+}
+
+@media(max-width:384px) {
+    .agileits-bottom input[type="submit"] {
+        width: 106.8%;
+        font-size: 0.9rem;
+        margin-left: -0.7rem;
+    }
+
+    .agileits-bottom {
+        margin: 2rem -1.5rem 0;
+    }
+
+    .agilesign-form {
+        margin: 1.5rem auto;
+    }
+}
+
+@media(max-width:375px) {
+    .agileits-bottom input[type="submit"] {
+        width: 106.5%;
+        margin-left: -0.6rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .wthree-text ul li {
+        float: none;
+        display: block;
+    }
+
+    .wthree-text ul li:nth-child(2) {
+        float: none;
+        margin-top: 1rem;
+    }
+
+    .wthree-text {
+        margin-top: 1.5rem;
+    }
+}
+
+@media(max-width:320px) {
+    .w3layouts-main {
+        padding: 1rem 0 0;
+    }
+
+    .agilesign-form {
+        width: 85%;
+    }
+
+    .agilesign-form input[type="text"] {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        width: 92%;
+    }
+
+    .styled-input label {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .styled-input input:focus~label,
+    .styled-input input:valid~label {
+        font-size: 0.8rem;
+        top: -1rem;
+    }
+
+    .styled-input input~span {
+        bottom: -1px;
+    }
+
+    .agileits-bottom input[type="submit"] {
+        width: 107%;
+        margin-left: -0.6rem;
+    }
+
+    .agileits-bottom {
+        margin: 1.8rem -1.5rem 0;
+    }
+}
+
+
+// 按钮和多选
+.styled-choose {
+    width: 100%;
+}
+
+label {
+    color: @color-text-background;
+}
+
+.checkbox .icon-checked:before {
+    content: '\F26C';
+}
+
+.checkbox .icon-unchecked:before {
+    content: '\F584';
+}
+
+.radio .icon-checked:before {
+    content: '\F517';
+}
+
+.radio .icon-unchecked:before {
+    content: '\F28A';
+}
+
+.checkbox,
+.radio {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    padding-left: 32px;
+    position: relative;
+    transition: color .25s linear;
+    font-size: 14px;
+    min-height: 20px;
+    line-height: 1.5;
+}
+
+.checkbox .icons,
+.radio .icons {
+    color: #bdc3c7;
+    display: block;
+    height: 20px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color .25s linear;
+}
+
+.checkbox .icons .icon-checked,
+.radio .icons .icon-checked {
+    opacity: 0;
+    filter: "alpha(opacity=0)";
+}
+
+.checkbox .icon-checked,
+.checkbox .icon-unchecked,
+.radio .icon-checked,
+.radio .icon-unchecked {
+    display: inline-table;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    margin: 0;
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+}
+
+.checkbox .icon-checked:before,
+.checkbox .icon-unchecked:before,
+.radio .icon-checked:before,
+.radio .icon-unchecked:before {
+    font-family: 'Bootstrap-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.checkbox input[type="checkbox"].custom-checkbox,
+.checkbox input[type="radio"].custom-radio,
+.radio input[type="checkbox"].custom-checkbox,
+.radio input[type="radio"].custom-radio {
+    outline: none !important;
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:hover:not(.nohover)+.icons,
+.checkbox input[type="radio"].custom-radio:hover:not(.nohover)+.icons,
+.radio input[type="checkbox"].custom-checkbox:hover:not(.nohover)+.icons,
+.radio input[type="radio"].custom-radio:hover:not(.nohover)+.icons {
+    transition: color .25s linear;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:hover:not(.nohover)+.icons .icon-unchecked,
+.checkbox input[type="radio"].custom-radio:hover:not(.nohover)+.icons .icon-unchecked,
+.radio input[type="checkbox"].custom-checkbox:hover:not(.nohover)+.icons .icon-unchecked,
+.radio input[type="radio"].custom-radio:hover:not(.nohover)+.icons .icon-unchecked {
+    opacity: 0;
+    filter: "alpha(opacity=0)";
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:hover:not(.nohover)+.icons .icon-checked,
+.checkbox input[type="radio"].custom-radio:hover:not(.nohover)+.icons .icon-checked,
+.radio input[type="checkbox"].custom-checkbox:hover:not(.nohover)+.icons .icon-checked,
+.radio input[type="radio"].custom-radio:hover:not(.nohover)+.icons .icon-checked {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:checked+.icons,
+.checkbox input[type="radio"].custom-radio:checked+.icons,
+.radio input[type="checkbox"].custom-checkbox:checked+.icons,
+.radio input[type="radio"].custom-radio:checked+.icons {
+    color: @color-2nd;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:checked+.icons .icon-unchecked,
+.checkbox input[type="radio"].custom-radio:checked+.icons .icon-unchecked,
+.radio input[type="checkbox"].custom-checkbox:checked+.icons .icon-unchecked,
+.radio input[type="radio"].custom-radio:checked+.icons .icon-unchecked {
+    opacity: 0;
+    filter: "alpha(opacity=0)";
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:checked+.icons .icon-checked,
+.checkbox input[type="radio"].custom-radio:checked+.icons .icon-checked,
+.radio input[type="checkbox"].custom-checkbox:checked+.icons .icon-checked,
+.radio input[type="radio"].custom-radio:checked+.icons .icon-checked {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+    color: @color-2nd;
+    transition: color .25s linear;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:disabled+.icons,
+.checkbox input[type="radio"].custom-radio:disabled+.icons,
+.radio input[type="checkbox"].custom-checkbox:disabled+.icons,
+.radio input[type="radio"].custom-radio:disabled+.icons {
+    cursor: default;
+    color: #e6e8ea;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:disabled+.icons .icons,
+.checkbox input[type="radio"].custom-radio:disabled+.icons .icons,
+.radio input[type="checkbox"].custom-checkbox:disabled+.icons .icons,
+.radio input[type="radio"].custom-radio:disabled+.icons .icons {
+    color: #e6e8ea;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:disabled+.icons .icon-unchecked,
+.checkbox input[type="radio"].custom-radio:disabled+.icons .icon-unchecked,
+.radio input[type="checkbox"].custom-checkbox:disabled+.icons .icon-unchecked,
+.radio input[type="radio"].custom-radio:disabled+.icons .icon-unchecked {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:disabled+.icons .icon-checked,
+.checkbox input[type="radio"].custom-radio:disabled+.icons .icon-checked,
+.radio input[type="checkbox"].custom-checkbox:disabled+.icons .icon-checked,
+.radio input[type="radio"].custom-radio:disabled+.icons .icon-checked {
+    opacity: 0;
+    filter: "alpha(opacity=0)";
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:disabled:checked+.icons .icons,
+.checkbox input[type="radio"].custom-radio:disabled:checked+.icons .icons,
+.radio input[type="checkbox"].custom-checkbox:disabled:checked+.icons .icons,
+.radio input[type="radio"].custom-radio:disabled:checked+.icons .icons {
+    color: #e6e8ea;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:disabled:checked+.icons .icon-unchecked,
+.checkbox input[type="radio"].custom-radio:disabled:checked+.icons .icon-unchecked,
+.radio input[type="checkbox"].custom-checkbox:disabled:checked+.icons .icon-unchecked,
+.radio input[type="radio"].custom-radio:disabled:checked+.icons .icon-unchecked {
+    opacity: 0;
+    filter: "alpha(opacity=0)";
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:disabled:checked+.icons .icon-checked,
+.checkbox input[type="radio"].custom-radio:disabled:checked+.icons .icon-checked,
+.radio input[type="checkbox"].custom-checkbox:disabled:checked+.icons .icon-checked,
+.radio input[type="radio"].custom-radio:disabled:checked+.icons .icon-checked {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+    color: #e6e8ea;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:indeterminate+.icons,
+.checkbox input[type="radio"].custom-radio:indeterminate+.icons,
+.radio input[type="checkbox"].custom-checkbox:indeterminate+.icons,
+.radio input[type="radio"].custom-radio:indeterminate+.icons {
+    color: #bdc3c7;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:indeterminate+.icons .icon-unchecked,
+.checkbox input[type="radio"].custom-radio:indeterminate+.icons .icon-unchecked,
+.radio input[type="checkbox"].custom-checkbox:indeterminate+.icons .icon-unchecked,
+.radio input[type="radio"].custom-radio:indeterminate+.icons .icon-unchecked {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:indeterminate+.icons .icon-checked,
+.checkbox input[type="radio"].custom-radio:indeterminate+.icons .icon-checked,
+.radio input[type="checkbox"].custom-checkbox:indeterminate+.icons .icon-checked,
+.radio input[type="radio"].custom-radio:indeterminate+.icons .icon-checked {
+    opacity: 0;
+    filter: "alpha(opacity=0)";
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:indeterminate+.icons:before,
+.checkbox input[type="radio"].custom-radio:indeterminate+.icons:before,
+.radio input[type="checkbox"].custom-checkbox:indeterminate+.icons:before,
+.radio input[type="radio"].custom-radio:indeterminate+.icons:before {
+    content: "\2013";
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+    width: 20px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    z-index: 10;
+}
+
+.checkbox input[type="checkbox"].custom-checkbox:focus+.icons,
+.checkbox input[type="radio"].custom-radio:focus+.icons,
+.radio input[type="checkbox"].custom-checkbox:focus+.icons,
+.radio input[type="radio"].custom-radio:focus+.icons {
+    outline: 1px dotted #bdc3c7;
+    outline-offset: 1px;
+}
+
+.checkbox.primary input[type="checkbox"].custom-checkbox+.icons,
+.checkbox.primary input[type="radio"].custom-radio+.icons,
+.radio.primary input[type="checkbox"].custom-checkbox+.icons,
+.radio.primary input[type="radio"].custom-radio+.icons {
+    color: #213141;
+}
+
+.checkbox.primary input[type="checkbox"].custom-checkbox:checked+.icons,
+.checkbox.primary input[type="radio"].custom-radio:checked+.icons,
+.radio.primary input[type="checkbox"].custom-checkbox:checked+.icons,
+.radio.primary input[type="radio"].custom-radio:checked+.icons {
+    color: @color-2nd;
+}
+
+.checkbox.primary input[type="checkbox"].custom-checkbox:checked+.icons .icons,
+.checkbox.primary input[type="radio"].custom-radio:checked+.icons .icons,
+.radio.primary input[type="checkbox"].custom-checkbox:checked+.icons .icons,
+.radio.primary input[type="radio"].custom-radio:checked+.icons .icons {
+    color: @color-2nd;
+}
+
+.checkbox.primary input[type="checkbox"].custom-checkbox:disabled+.icons,
+.checkbox.primary input[type="radio"].custom-radio:disabled+.icons,
+.radio.primary input[type="checkbox"].custom-checkbox:disabled+.icons,
+.radio.primary input[type="radio"].custom-radio:disabled+.icons {
+    cursor: default;
+    color: #bdc3c7;
+}
+
+.checkbox.primary input[type="checkbox"].custom-checkbox:disabled+.icons .icons,
+.checkbox.primary input[type="radio"].custom-radio:disabled+.icons .icons,
+.radio.primary input[type="checkbox"].custom-checkbox:disabled+.icons .icons,
+.radio.primary input[type="radio"].custom-radio:disabled+.icons .icons {
+    color: #bdc3c7;
+}
+
+.checkbox.primary input[type="checkbox"].custom-checkbox:disabled+.icons.checked .icons,
+.checkbox.primary input[type="radio"].custom-radio:disabled+.icons.checked .icons,
+.radio.primary input[type="checkbox"].custom-checkbox:disabled+.icons.checked .icons,
+.radio.primary input[type="radio"].custom-radio:disabled+.icons.checked .icons {
+    color: #bdc3c7;
+}
+
+.checkbox.primary input[type="checkbox"].custom-checkbox:indeterminate+.icons,
+.checkbox.primary input[type="radio"].custom-radio:indeterminate+.icons,
+.radio.primary input[type="checkbox"].custom-checkbox:indeterminate+.icons,
+.radio.primary input[type="radio"].custom-radio:indeterminate+.icons {
+    color: #34495e;
+}
+
+.radio+.radio,
+.checkbox+.checkbox {
+    margin-top: 10px;
+}
+
+.form-inline .checkbox,
+.form-inline .radio {
+    padding-left: 32px;
+}

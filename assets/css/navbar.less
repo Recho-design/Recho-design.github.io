@@ -10,6 +10,11 @@ body {
 }
 
 // 顶部导航栏
+.logo{
+    font-family: @font-1st;
+    color: @color-text-background;
+    font-size: 2rem;
+}
 .navbar {
     flex: 0 0 auto;
     flex-shrink: 0;
@@ -24,8 +29,9 @@ body {
     height: 4rem;
 }
 
-.nav-link {
+.nav-item .nav-link {
     padding: .5rem 1rem;
+    font-weight: 400;
     color: white;
     font-family: @font-1st;
     font-size: 1.5rem;

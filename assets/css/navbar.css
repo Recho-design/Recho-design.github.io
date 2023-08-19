@@ -9,6 +9,11 @@ body {
   margin: 0;
   padding: 0;
 }
+.logo {
+  font-family: "标小智无界黑";
+  color: white;
+  font-size: 2rem;
+}
 .navbar {
   flex: 0 0 auto;
   flex-shrink: 0;
@@ -21,8 +26,9 @@ body {
 #Logo {
   height: 4rem;
 }
-.nav-link {
+.nav-item .nav-link {
   padding: 0.5rem 1rem;
+  font-weight: 400;
   color: white;
   font-family: "标小智无界黑";
   font-size: 1.5rem;

@@ -2189,7 +2189,6 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .checkbox input[type="radio"].custom-radio:indeterminate + .icons:before,
 .radio input[type="checkbox"].custom-checkbox:indeterminate + .icons:before,
 .radio input[type="radio"].custom-radio:indeterminate + .icons:before {
-  content: "\2013";
   position: absolute;
   top: 0;
   left: 0;

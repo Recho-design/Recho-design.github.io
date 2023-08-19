@@ -1,0 +1,280 @@
+@import "font.less";
+@import "color.less";
+
+/* 我要约稿 */
+.text {
+    position: absolute;
+    left: 10rem;
+    top: 14.5rem;
+    width: 34.375rem;
+    height: 12.5rem;
+    line-height: 1;
+}
+
+.text p:nth-child(1) {
+    font: 4.625rem @font-1st;
+    line-height: 1;
+    color: white;
+    text-align: left;
+}
+
+.text p:nth-child(2) {
+    font: 1.3rem @font-2nd;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+}
+
+.text p:nth-child(2) {
+    margin-top: 1.5rem;
+    font: 1rem @font-2nd;
+    line-height: 1;
+    color: white;
+    text-align: left;
+    line-height: 2;
+}
+
+/*-- main --*/
+.w3layouts-main {
+    padding: 2rem 0 0;
+}
+
+.agilesign-form {
+    width: 40%;
+    margin: 15rem 0 0 60rem;
+
+}
+
+.agileits-top {
+    position: relative;
+    padding: 1rem 3rem 0;
+}
+
+.input-information{
+    display: flex;
+    justify-content: space-between;
+}
+
+.agilesign-form textarea[type="text"],
+.agilesign-form input[type="text"] {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.8rem .5rem;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    background: none;
+    -webkit-appearance: none;
+}
+
+/*-- input-effect --*/
+.styled-input textarea:focus~label,
+.styled-input textarea:valid~label,
+.styled-input input:focus~label,
+.styled-input input:valid~label {
+    font-size: 1rem;
+    color: @color-2nd;
+    top: -1.5rem;
+    -webkit-transition: all 0.125s ease;
+    -moz-transition: all 0.125s ease;
+    -o-transition: all 0.125s ease;
+    -ms-transition: all 0.125s ease;
+    transition: all 0.125s ease;
+}
+
+.styled-input {
+    display: inline-block;
+    width: 48%;
+    margin: 2rem 0 1rem;
+    position: relative;
+}
+
+.styled-input label {
+    color: #fff;
+    padding: 0.8rem .5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    line-height: 1rem;
+}
+
+.styled-input textarea~span,
+.styled-input input~span {
+    display: block;
+    width: 0;
+    height: 2px;
+    background: @color-2nd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 0.125s ease;
+    -moz-transition: all 0.125s ease;
+    -o-transition: all 0.125s ease;
+    -ms-transition: all 0.125s ease;
+    transition: all 0.125s ease;
+}
+
+.styled-input textarea:focus,
+.styled-input input:focus {
+    outline: 0;
+}
+
+.styled-input textarea:focus~span,
+.styled-input input:focus~span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    -moz-transition: all 0.075s ease;
+    -o-transition: all 0.075s ease;
+    -ms-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+
+}
+
+// 选择稿费
+.styled-choose p {
+    font-size: 1rem;
+    color: @color-text-background;
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+
+.select {
+    min-width: 1rem;
+    margin-left: 2rem;
+}
+
+.select-default .select2-choice {
+    color: @color-text !important;
+    background-color: transparent !important;
+}
+
+.select2-choice {
+    padding: 0 1.5rem 0 0.5rem;
+    display: inline;
+}
+
+.select2-arrow {
+    top: 30%;
+    right: 0.5rem;
+    border: 4px 4px;
+}
+
+.select2-search {
+    display: none;
+}
+
+.form-control {
+    background-color: gainsboro;
+}
+
+.select2-drop {
+    min-width: 1rem;
+}
+
+.select2-drop .select2-highlighted>.select2-result-label {
+    background: @color-2nd;
+    color: @color-text;
+}
+
+// 详细信息
+
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.w3_styled_input_textarea {
+    width: 100%;
+    display: flex;
+}
+
+
+// 选择
+.styled-choose {
+    height: 3rem;
+    margin-left: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    color: @color-text-background;
+}
+
+.checkbox .icon-checked:before {
+    content: '\F26C';
+}
+
+.checkbox .icon-unchecked:before {
+    content: '\F584';
+}
+
+.radio .icon-checked:before {
+    content: '\F517';
+}
+
+.radio .icon-unchecked:before {
+    content: '\F28A';
+}
+
+.checkbox,
+.radio {
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    padding-left: 32px;
+    position: relative;
+    transition: color .25s linear;
+    font-size: 14px;
+    min-height: 20px;
+    line-height: 1.5;
+}
+
+
+
+.checkbox .icon-checked:before,
+.checkbox .icon-unchecked:before,
+.radio .icon-checked:before,
+.radio .icon-unchecked:before {
+    font-family: 'Bootstrap-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.checkbox input[type="checkbox"].custom-checkbox:checked + .icons .icon-checked,
+.checkbox input[type="radio"].custom-radio:checked + .icons .icon-checked,
+.radio input[type="checkbox"].custom-checkbox:checked + .icons .icon-checked,
+.radio input[type="radio"].custom-radio:checked + .icons .icon-checked {
+  opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+  color: @color-2nd;
+  transition: color .25s linear;
+}
+
+// 提交
+.btn-primary {
+    float: right;
+    color: @color-text;
+    font-size: 1rem;
+    background-color: @color-2nd;
+  }

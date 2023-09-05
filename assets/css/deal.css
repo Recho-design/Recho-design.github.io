@@ -1,43 +1,6 @@
-@font-face {
-  font-family: "标小智无界黑";
-  src: url(/assets/fonts/标小智无界黑.ttf);
-}
-/* 我要约稿 */
-.text {
-  position: absolute;
-  left: 10rem;
-  top: 14.5rem;
-  width: 34.375rem;
-  height: 12.5rem;
-  line-height: 1;
-}
-.text p:nth-child(1) {
-  font: 4.625rem "标小智无界黑";
-  line-height: 1;
-  color: white;
-  text-align: left;
-}
-.text p:nth-child(2) {
-  font: 1.3rem "Arial";
-  line-height: 1.5;
-  color: white;
-  text-align: left;
-}
-.text p:nth-child(2) {
-  margin-top: 1.5rem;
-  font: 1rem "Arial";
-  line-height: 1;
-  color: white;
-  text-align: left;
-  line-height: 2;
-}
 /*-- main --*/
 .w3layouts-main {
   padding: 2rem 0 0;
-}
-.agilesign-form {
-  width: 40%;
-  margin: 15rem 0 0 60rem;
 }
 .agileits-top {
   position: relative;
@@ -134,6 +97,7 @@
 .select-default .select2-choice {
   color: #333333 !important;
   background-color: transparent !important;
+  margin-right: 0.5rem;
 }
 .select2-choice {
   padding: 0 1.5rem 0 0.5rem;
@@ -141,7 +105,7 @@
 }
 .select2-arrow {
   top: 30%;
-  right: 0.5rem;
+  right: 0rem;
   border: 4px 4px;
 }
 .select2-search {
@@ -180,7 +144,7 @@ textarea {
   align-items: center;
 }
 label {
-  color: white;
+  color: #333333;
 }
 .checkbox .icon-checked:before {
   content: '\F26C';
@@ -234,4 +198,5 @@ label {
   color: #333333;
   font-size: 1rem;
   background-color: #e0ff70;
+  width: 4rem;
 }

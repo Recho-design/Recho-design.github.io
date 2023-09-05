@@ -1,81 +1,130 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 导入 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- swiper幻灯片切换 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- 引入动画 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/sidebar.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <!-- JQuery -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <!-- 引入模块 -->
+    <script src="/assets/js/load-parts.js"></script>
+    <!-- 幻灯片切换js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- 导入 -->
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <!-- swiper幻灯片切换 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-  <!-- 引入动画 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <!-- css -->
-  <link rel="stylesheet" href="/assets/css/normalize.css">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/navbar.css">
-  <link rel="stylesheet" href="/assets/css/sidebar.css">
-  <link rel="stylesheet" href="/assets/css/responsive.css">
-  <!-- JQuery -->
-  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-  <!-- 引入顶栏 -->
-  <script src="/assets/js/load-nav.js"></script>
-  <!-- 幻灯片切换js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-</head>
-
-<body>
-  <div class="page-container">
-    <!-- 顶栏 -->
-    <div id="navbar-container"></div>
-    <!-- 内容 -->
-    <div class="main">
+  <body>
+    <!-- 加载动画 -->
+    <div id="loading-container" style="z-index: 999; height: 100vh"></div>
+    <div id="main-content" class="container-fluid h-100 p-0">
+      <!-- 顶栏 -->
+      <div id="navbar-container" style="display: none"></div>
+      <!-- 内容 -->
       <!-- Swiper -->
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper" style="padding-top: 4rem">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="slide-BG"><img src="assets/img/pic/Banner/Mizuki/BG.jpg"></div>
-            <div class="slide1-char animate__animated" data-animation="animate__fadeInRight">
-              <img src="assets/img/pic/Banner/Mizuki/char.png">
+            <div class="slide-BG">
+              <img src="assets/img/pic/Banner/Mizuki/BG.jpg" />
             </div>
-            <div class="slide1-text animate__animated animate_delay_0v3" data-animation="animate__fadeInRight">
-              <img src="assets/img/pic/Banner/Mizuki/text.png">
+            <div
+              class="slide1-char animate__animated"
+              data-animation="animate__fadeInRight"
+            >
+              <img src="assets/img/pic/Banner/Mizuki/char.png" />
             </div>
-            <div class="slide1-dero animate__animated animate_delay_0v3" data-animation="animate__fadeIn">
-              <img src="assets/img/pic/Banner/Mizuki/dero.png">
+            <div
+              class="slide1-text animate__animated animate_delay_0v3"
+              data-animation="animate__fadeInRight"
+            >
+              <img src="assets/img/pic/Banner/Mizuki/text.png" />
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide-BG"><img src="assets/img/pic/Banner/Dejimeiduo/BG.jpg"></div>
-            <div class="slide2-char animate__animated" data-animation="animate__fadeInLeft">
-              <img src="assets/img/pic/Banner/Dejimeiduo/char.png">
-            </div>
-            <div class="slide2-text animate__animated" data-animation="animate__fadeInLeft">
-              <img src="assets/img/pic/Banner/Dejimeiduo/text.png">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide-BG"><img src="assets/img/pic/Banner/Elizabteh/BG.jpg"></div>
-            <div class="slide3-char animate__animated" data-animation="animate__fadeInRight">
-              <img src="assets/img/pic/Banner/Elizabteh/char.png">
-            </div>
-            <div class="slide3-text animate__animated animate_delay_0v3" data-animation="animate__fadeInRight">
-              <img src="assets/img/pic/Banner/Elizabteh/text.png">
-            </div>
-            <div class="slide3-dero animate__animated animate_delay_0v3" data-animation="animate__fadeIn">
-              <img src="assets/img/pic/Banner/Elizabteh/dero.png">
+            <div
+              class="slide1-dero animate__animated animate_delay_0v3"
+              data-animation="animate__fadeIn"
+            >
+              <img src="assets/img/pic/Banner/Mizuki/dero.png" />
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="slide-BG"><img src="assets/img/pic/Banner/Man/BG.jpg"></div>
-            <div class="slide4-char animate__animated" data-animation="animate__fadeInLeft">
-              <img src="assets/img/pic/Banner/Man/char.png">
+            <div class="slide-BG">
+              <img src="assets/img/pic/Banner/Dejimeiduo/BG.jpg" />
             </div>
-            <div class="slide4-text animate__animated" data-animation="animate__fadeInLeft">
-              <img src="assets/img/pic/Banner/Man/text.png">
+            <div
+              class="slide2-char animate__animated"
+              data-animation="animate__fadeInLeft"
+            >
+              <img src="assets/img/pic/Banner/Dejimeiduo/char.png" />
+            </div>
+            <div
+              class="slide2-text animate__animated"
+              data-animation="animate__fadeInLeft"
+            >
+              <img src="assets/img/pic/Banner/Dejimeiduo/text.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-BG">
+              <img src="assets/img/pic/Banner/Elizabteh/BG.jpg" />
+            </div>
+            <div
+              class="slide3-char animate__animated"
+              data-animation="animate__fadeInRight"
+            >
+              <img src="assets/img/pic/Banner/Elizabteh/char.png" />
+            </div>
+            <div
+              class="slide3-text animate__animated animate_delay_0v3"
+              data-animation="animate__fadeInRight"
+            >
+              <img src="assets/img/pic/Banner/Elizabteh/text.png" />
+            </div>
+            <div
+              class="slide3-dero animate__animated animate_delay_0v3"
+              data-animation="animate__fadeIn"
+            >
+              <img src="assets/img/pic/Banner/Elizabteh/dero.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-BG">
+              <img src="assets/img/pic/Banner/Man/BG.jpg" />
+            </div>
+            <div
+              class="slide4-char animate__animated"
+              data-animation="animate__fadeInLeft"
+            >
+              <img src="assets/img/pic/Banner/Man/char.png" />
+            </div>
+            <div
+              class="slide4-text animate__animated"
+              data-animation="animate__fadeInLeft"
+            >
+              <img src="assets/img/pic/Banner/Man/text.png" />
             </div>
           </div>
         </div>
@@ -85,70 +134,91 @@
       </div>
     </div>
 
-  </div>
-
-
-  <!-- js -->
-  <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
-  <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
-  <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
-  <!-- 所有页面的js -->
-  <script src="/assets/js/main.js"></script>
-  <!-- 幻灯片切换js -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 0,
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      on: {
-        init: function () {
-          // 初始时手动触发动画逻辑
-          updateAnimations.call(this);
+    <!-- js -->
+    <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <!-- 所有页面的js -->
+    <script src="/assets/js/main.js"></script>
+    <!-- 幻灯片切换js -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        slidesPerView: 1,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
         },
-        slideChange: function () {
-          // 幻灯片切换时触发动画逻辑
-          updateAnimations.call(this);
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
-      },
-    });
-
-    function updateAnimations() {
-      // 获取当前活动的幻灯片元素
-      var activeSlide = this.slides[this.activeIndex];
-
-      // 在活动幻灯片中找到所有需要添加动画的元素
-      var animatedElements = activeSlide.querySelectorAll(".animate__animated");
-
-      // 遍历元素并添加对应的动画类
-      animatedElements.forEach(function (element) {
-        var animationType = element.dataset.animation; // 获取元素的自定义动画属性值
-
-        // 移除现有的动画类
-        element.classList.remove("animate__fadeIn");
-        element.classList.remove("animate__fadeInRight");
-        element.classList.remove("animate__fadeInLeft"); // 添加其他动画类的移除逻辑
-
-        void element.offsetWidth; // 强制重新渲染，以便移除类后重新添加类
-
-        // 添加对应的动画类
-        element.classList.add(animationType);
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          init: function () {
+            // 初始时手动触发动画逻辑
+            updateAnimations.call(this);
+          },
+          slideChange: function () {
+            // 幻灯片切换时触发动画逻辑
+            updateAnimations.call(this);
+          },
+        },
       });
-    }
+      // 动画重置
+      function updateAnimations() {
+        // 获取当前活动的幻灯片元素
+        var activeSlide = this.slides[this.activeIndex];
 
-  </script>
+        // 在活动幻灯片中找到所有需要添加动画的元素
+        var animatedElements =
+          activeSlide.querySelectorAll(".animate__animated");
 
-</body>
+        // 遍历元素并添加对应的动画类
+        animatedElements.forEach(function (element) {
+          var animationType = element.dataset.animation; // 获取元素的自定义动画属性值
 
+          // 移除现有的动画类
+          element.classList.remove("animate__fadeIn");
+          element.classList.remove("animate__fadeInRight");
+          element.classList.remove("animate__fadeInLeft"); // 添加其他动画类的移除逻辑
+
+          void element.offsetWidth; // 强制重新渲染，以便移除类后重新添加类
+
+          // 添加对应的动画类
+          element.classList.add(animationType);
+        });
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        // 在页面加载时，先隐藏navbar-container和main-content
+        $("#navbar-container, #main-content").hide();
+
+        // 加载loading.html并在加载完成后隐藏加载动画
+        $.get("loading.html", function (data) {
+          $("#loading-container").html(data);
+
+          // 页面加载完成后隐藏加载动画
+          $(window).on("load", function () {
+            $("#loading-container").fadeOut("slow", function () {
+              // 加载完成后显示navbar-container和main-content
+              $("#navbar-container, #main-content").show();
+            });
+          });
+        });
+
+        // 加载navbar.html内容
+        $.get("navbar.html", function (data) {
+          $("#navbar-container").html(data);
+        });
+      });
+    </script>
+  </body>
 </html>

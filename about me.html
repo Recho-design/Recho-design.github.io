@@ -1,116 +1,135 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/about me.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/sidebar.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- css -->
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/assets/css/liMarquee.css">
-  <link rel="stylesheet" href="/assets/css/normalize.css">
-  <link rel="stylesheet" href="/assets/css/about me.css">
-  <link rel="stylesheet" href="/assets/css/navbar.css">
-  <link rel="stylesheet" href="/assets/css/sidebar.css">
-  <link rel="stylesheet" href="/assets/css/responsive.css">
+    <!-- JQuery -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/js/load-parts.js"></script>
+  </head>
 
-  <!-- JQuery -->
-  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-  <script src="/assets/js/load-nav.js"></script>
-</head>
+  <body>
+    <div class="container-fluid p-0 vh-100 d-flex">
+      <!-- 顶栏 -->
+      <div id="navbar-container"></div>
+      <!-- 内容 -->
+      <div class="position-relative flex-grow-1" style="padding-top: 4rem">
+        <div class="row h-100 w-100 m-0">
+          <div class="col-4 d-flex flex-column">
+            <div class="position-relative w-100 h-75">
+              <div
+                class="card-1 bg-1st border border-3 border-white rounded rounded-0 position-absolute"
+              >
+                <div class="d-flex justify-content-between py-1 px-2 color-4th">
+                  <strong>IMAGE</strong>
+                  <strong>X</strong>
+                </div>
+                <img
+                  src="assets/img/pic/profilephoto.jpg"
+                  class="card-img-bottom img-fluid"
+                />
+              </div>
+              <div
+                class="card-2 bg-2nd d-flex flex-column align-content-center flex-wrap p-2 position-absolute bottom-0 end-0"
+              >
+                <strong class="color-3rd text-end mt-2 fs-4">NZK</strong>
+                <hr />
+                <p class="color-3rd lh-lg">
+                  同人方面是超杂食人/博爱党/纯爱战士<br />
+                  初心一直是猎人<br />
+                  目前是和名侦热恋中<br />
+                  爬墙速度很快产粮速度很慢<br />
+                  感谢我这么菜你还来看看我
+                </p>
+              </div>
+            </div>
 
-<body>
-  <div class="page-container">
-    <!-- 顶栏 -->
-    <div id="navbar-container"></div>
-    <!-- 侧边栏 -->
-    <div class="offcanvas offcanvas-end" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </h5>
-      </div>
-      <div class="offcanvas-body">
-        <div class="offcanvas-list">
-          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>关于我</a>
-          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>我的作品</a>
-          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>我要约稿</a>
-          <a class="offcanvas-link" href="#"><i class="bi bi-arrow-right-short"></i>Q&amp;A</a>
-        </div>
-        <div class="offcanvas-contact">
-          <a href="http://wpa.qq.com/msgrd?v=3&uin=841712842&site=qq&menu=yes" target="_blank"><img
-              src="/assets/img/svg/qq_block .svg"></a>
-          <a href="https://weibo.com/u/1930149341" target="_blank"><img src="assets/img/svg/weibo_block.svg"></a>
-          <a href="https://nzkiss.lofter.com/" target="_blank"><img src="assets/img/svg/lofter_block.svg"></a>
-        </div>
-      </div>
-    </div>
+            <div class="d-flex align-items-center">
+              <div class="col-10" style="padding-left: 10rem">
+                <p class="font-1st display-1">
+                  ABOUT<br />
+                  ME
+                </p>
+              </div>
+              <p class="col-2 font-1st display-1">＞</p>
+            </div>
+          </div>
 
-    <!-- 内容 -->
-    <div class="main">
-      <div class="card card-1">
-        <div class="IMAGE">
-          <p>IMAGE</p>
-          <p>X</p>
-        </div>
-        <div class="profilephoto">
-          <img src="assets/img/pic/profilephoto.jpg">
-        </div>
-      </div>
-      <div class="card card-2">
-        <p>NZK</p>
-        <hr>
-        <p>同人方面是超杂食人/博爱党/纯爱战士<br>
-          初心一直是猎人<br>
-          目前是和名侦热恋中<br>
-          爬墙速度很快产粮速度很慢<br>
-          感谢我这么菜你还来看看我</p>
-      </div>
-      <div class="aboutme-decorated">
-        <div class="aboutme-text">
-          <p>ABOUT<br>
-            ME</p>
-        </div>
-        <div class="right-row">
-          <p>＞</p>
-        </div>
-      </div>
-      <div class="main-text">
-        <div class="guanyuwo">
-          <p>关于我</p>
-        </div>
-        <div class="business-field">
-          <p>//勤勤恳恳画画的小姐姐一枚呀<br><br>
+          <div class="col-8 h-auto">
+            <div class="position-relative h-100">
+              <div
+                class="d-flex flex-column position-absolute border-top border-start border-5 border-white end-0 bottom-0"
+                style="height: 50rem; width: 60rem"
+              >
+                <div class="d-flex m-0">
+                  <p
+                    class="col-8 font-1st border-end border-1 text-center ps-4"
+                    style="font-size: 7rem; letter-spacing: 2rem"
+                  >
+                    关于我
+                  </p>
+                  <div class="col-4"></div>
+                </div>
 
-            //快给我钱<br><br>
+                <div class="d-flex m-0 flex-grow-1 border-5 border-top border-white">
+                  <div
+                    class="flex-grow-1 ps-5 pt-5"
+                  >
+                    <p class="fs-5 ms-3">
+                      //勤勤恳恳画画的小姐姐一枚呀<br /><br />
 
-            //我擅长画的<br>
-            *女人<br>
-            *男童<br><br>
+                      //快给我钱<br /><br />
 
-            //我不擅长画的<br>
-            *男人<br><br>
+                      //我擅长画的<br />
+                      *女人<br />
+                      *男童<br /><br />
 
-            //不知道写什么占个位置吧<br><br>
+                      //我不擅长画的<br />
+                      *男人<br /><br />
 
-            //继续占位置<br><br>
+                      //不知道写什么占个位置吧<br /><br />
 
-            //全是不能解禁的图有什么可放的吗</p>
-          <div class="scroll-bar">
-            <div class="scroll-fill"></div>
+                      //继续占位置<br /><br />
+
+                      //全是不能解禁的图有什么可放的吗
+                    </p>
+                  </div>
+                  <div
+                    class="border-start border-1 border-white h-auto"
+                   style="width: 3rem;">
+                    <div class="bg-white" style="height: 15rem;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <!-- 感叹号 -->
       <div class="warning-icon">
-        <object data="/assets/img/svg/warning_icon.svg" type="image/svg+xml"></object>
+        <object
+          data="/assets/img/svg/warning_icon.svg"
+          type="image/svg+xml"
+        ></object>
       </div>
     </div>
-
-
-
 
     <!-- js -->
     <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
@@ -118,6 +137,5 @@
     <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
     <script src="/assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>

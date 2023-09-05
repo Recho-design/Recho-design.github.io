@@ -1,49 +1,15 @@
-@import "font.less";
-@import "color.less";
+@color-background: #1a1a1a;
+@color-1st: #6a50ff;
+@color-2nd: #e0ff70;
+@color-3rd: #333333;
+@color-4th: white;
 
-/* 我要约稿 */
-.text {
-    position: absolute;
-    left: 10rem;
-    top: 14.5rem;
-    width: 34.375rem;
-    height: 12.5rem;
-    line-height: 1;
-}
-
-.text p:nth-child(1) {
-    font: 4.625rem @font-1st;
-    line-height: 1;
-    color: white;
-    text-align: left;
-}
-
-.text p:nth-child(2) {
-    font: 1.3rem @font-2nd;
-    line-height: 1.5;
-    color: white;
-    text-align: left;
-}
-
-.text p:nth-child(2) {
-    margin-top: 1.5rem;
-    font: 1rem @font-2nd;
-    line-height: 1;
-    color: white;
-    text-align: left;
-    line-height: 2;
-}
 
 /*-- main --*/
 .w3layouts-main {
     padding: 2rem 0 0;
 }
 
-.agilesign-form {
-    width: 40%;
-    margin: 15rem 0 0 60rem;
-
-}
 
 .agileits-top {
     position: relative;
@@ -140,7 +106,7 @@
 // 选择稿费
 .styled-choose p {
     font-size: 1rem;
-    color: @color-text-background;
+    color: @color-4th;
     margin-bottom: 0;
     margin-left: 2rem;
 }
@@ -151,8 +117,9 @@
 }
 
 .select-default .select2-choice {
-    color: @color-text !important;
+    color: @color-3rd !important;
     background-color: transparent !important;
+    margin-right: 0.5rem;
 }
 
 .select2-choice {
@@ -162,7 +129,7 @@
 
 .select2-arrow {
     top: 30%;
-    right: 0.5rem;
+    right: 0rem;
     border: 4px 4px;
 }
 
@@ -180,7 +147,7 @@
 
 .select2-drop .select2-highlighted>.select2-result-label {
     background: @color-2nd;
-    color: @color-text;
+    color: @color-3rd;
 }
 
 // 详细信息
@@ -213,7 +180,7 @@ textarea {
 }
 
 label {
-    color: @color-text-background;
+    color: @color-3rd;
 }
 
 .checkbox .icon-checked:before {
@@ -274,7 +241,8 @@ label {
 // 提交
 .btn-primary {
     float: right;
-    color: @color-text;
+    color: @color-3rd;
     font-size: 1rem;
     background-color: @color-2nd;
+    width: 4rem;
   }

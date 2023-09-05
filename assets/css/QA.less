@@ -1,0 +1,33 @@
+// 标题
+.head {
+  width: 80rem;
+  margin-bottom: 5rem;
+}
+
+// 内容
+
+.item {
+  width: 80rem;
+  padding: 0 0 0 0;
+}
+
+.item img {
+  height: 22rem;
+  object-fit: contain;
+}
+
+.vertical-line {
+  position: relative;
+  height: 4rem;
+}
+
+.vertical-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 0.1rem; /* 竖线的宽度 */
+  height: 100%; /* 竖线的高度，可以根据需要调整 */
+  background-color: white; /* 竖线的颜色 */
+}

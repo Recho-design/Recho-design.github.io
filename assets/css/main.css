@@ -1,14 +1,39 @@
-@font-face {
-  font-family: "标小智无界黑";
-  src: url(/assets/fonts/标小智无界黑.ttf);
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-.main {
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 4rem 0 0 0;
-  text-align: center;
+/* 在原有fadeInLeft动画的基础上，增加自定义样式 */
+.animate__fadeInLeft {
+  animation: fadeInLeft 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+/* 自定义fadeInRight动画，覆盖原有效果 */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* 在原有fadeInRight动画的基础上，增加自定义样式 */
+.animate__fadeInRight {
+  animation: fadeInRight 1.5s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .swiper {
   width: 100%;
@@ -57,7 +82,7 @@
   object-fit: cover;
 }
 .swiper {
-  --swiper-theme-color: #6a50ff;
+  --swiper-theme-color: black;
   /* 设置Swiper风格 */
   --swiper-navigation-size: 30px;
   /* 设置按钮大小 */
@@ -87,7 +112,13 @@
   }
 }
 .animate_delay_0v3 {
+  opacity: 0;
   animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  /* 这将保持动画结束后的状态 */
+}
+.animate__animated.animate_delay_0v3 {
+  visibility: visible;
 }
 .slide1-char {
   position: absolute;

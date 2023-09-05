@@ -1,25 +1,438 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/QA.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- css -->
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="assets/css/QA.css">
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- JQuery -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="assets/js/load-parts.js"></script>
+  </head>
 
+  <body>
+    <!-- 浮窗 -->
+    <div id="count-container"></div>
+    <!-- 顶栏 -->
+    <div id="navbar-container"></div>
+    <div class="page-container d-flex flex-column align-items-center">
+      <div class="row head">
+        <div class="col">
+          <h1>约稿须知</h1>
+        </div>
+        <div class="col text-end">
+          <p class="m-0">
+            默认不接:争议IP/真人/头像/车稿/急件(截稿日两周内)
+            <br />能力有限谨慎约的类型:男性/纯古风/场景复杂
+            <br />价格除项目2外为私人委托 商用X2
+          </p>
+        </div>
+      </div>
+      <div class="item container row text-light">
+        <div class="col">
+          <!-- 01 -->
+          <div class="row mb-lg-3 mt-lg-5 justify-content-between">
+            <div class="col-lg-3">
+              <span class="title-02">01</span>
+              <p class="fw-bold fs-3 ms-1">服设/OC</p>
+            </div>
+            <div class="col-lg-2 align-self-end text-end">
+              <p class="fs-4 lh-2">¥2000-5000</p>
+            </div>
+          </div>
 
-  <!-- JQuery -->
-  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-  <script src="assets/js/load-nav.js"></script>
+          <div class="row">
+            <div class="col-lg-12 p-0 mb-3">
+              <div class="border-bottom border-2"></div>
+            </div>
+          </div>
+          <div class="row mb-5 gx-0">
+            <div class="col-lg-6">
+              <div class="row align-items-end">
+                <div class="col-10 px-0">
+                  <img
+                    src="assets/img/pic/Deal/OC1.jpg"
+                    class="img-fluid border border-1 p-lg-3"
+                  />
+                </div>
+                <div class="col-2"><span class="title-02 ms-2">a.</span></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row align-items-end">
+                <div class="col-10 px-0">
+                  <img
+                    src="assets/img/pic/Deal/OC2.jpg"
+                    class="img-fluid border border-1 p-lg-3"
+                  />
+                </div>
+                <div class="col-2"><span class="title-02 ms-2">b.</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- 文字解释 -->
+          <div class="row mb-lg-5 gx-0">
+            <div class="row">
+              <p>如例图a完成度适用起步价</p>
+            </div>
+            <div class="row row-cols-lg-2">
+              <div class="col-lg-6 mb-lg-3">
+                <p>带简单拆分（通常为背视图+主要设计点+部分饰品与纹样）</p>
+              </div>
+              <div class="col-lg-4 mb-lg-3">
+                <p>……………&nbsp;&nbsp;&nbsp;工期约为7工作日</p>
+              </div>
+              <div class="col-lg-6">
+                <p>a图基础上添加如例图b的三视图+1000</p>
+              </div>
+              <div class="col-lg-4">
+                <p>……………&nbsp;&nbsp;&nbsp;工期+5工作日</p>
+              </div>
+              <div class="col-lg-6">
+                <p>设计组成为机甲设计+1000</p>
+              </div>
+              <div class="col-lg-4">
+                <p>……………&nbsp;&nbsp;&nbsp;工期+3工作日</p>
+              </div>
+              <div class="col-lg-6">
+                <p>包含简单武器设计+200</p>
+              </div>
+              <div class="col-lg-4">
+                <p>……………&nbsp;&nbsp;&nbsp;工期+2工作日</p>
+              </div>
+            </div>
+          </div>
+          <!-- 02 -->
+          <div class="row mb-lg-3 mt-lg-5 justify-content-between">
+            <div class="col-lg-3">
+              <span class="title-02">02</span>
+              <p class="fw-bold fs-3 ms-1">立绘</p>
+            </div>
+            <div class="col-lg-2 align-self-end text-end">
+              <p class="fs-4 lh-2">¥2500以上</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 p-0 mb-3">
+              <div class="border-bottom border-2"></div>
+            </div>
+          </div>
+          <div class="row mb-5 gx-0">
+            <div class="col-lg-6">
+              <div class="row align-items-end">
+                <div class="col-5 px-0">
+                  <img
+                    src="assets/img/pic/Deal/tachie1.jpg"
+                    class="img-fluid border border-1 p-lg-3"
+                  />
+                </div>
+                <div class="col-5 px-0">
+                  <img
+                    src="assets/img/pic/Deal/tachie2.jpg"
+                    class="img-fluid border border-1 p-lg-3"
+                  />
+                </div>
+                <div class="col-2"><span class="title-02 ms-2">c.</span></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row align-items-end">
+                <div class="col-10 px-0">
+                  <img
+                    src="assets/img/pic/Deal/tachie3.jpg"
+                    class="img-fluid border border-1 p-lg-3"
+                  />
+                </div>
+                <div class="col-2"><span class="title-02 ms-2">d.</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- 文字解释 -->
+          <div class="row mb-lg-5 gx-0">
+            <div class="row mb-lg-3">
+              <p>
+                <strong
+                  >因为细化成本考量该项基本只接商授权（价格亦为商）</strong
+                >
+              </p>
+            </div>
+            <div class="row row-cols-lg-2">
+              <div class="col-lg-6">
+                <p>立绘如完成度c例图的半身，适用起步价</p>
+              </div>
+              <div class="col-lg-4">
+                <p>……………&nbsp;&nbsp;&nbsp;工期约为10工作日</p>
+              </div>
+              <div class="col-lg-6">
+                <p>补齐全身+1500</p>
+              </div>
+              <div class="col-lg-4">
+                <p>……………&nbsp;&nbsp;&nbsp;工期+5工作日</p>
+              </div>
+              <div class="col-lg-6 mb-lg-3">
+                <p>
+                  立绘如完成度d例图：精二效果，有简单色块背景+简单特效 6000起
+                </p>
+              </div>
+              <div class="col-lg-4 mb-lg-3">
+                <p>……………&nbsp;&nbsp;&nbsp;工期约为20工作日</p>
+              </div>
+            </div>
+            <div class="row">
+              <p>
+                根据原设的差异此项存在较大浮动<br />
+                <del>该项又贵又慢私人使用不建议约</del>
+              </p>
+            </div>
+          </div>
 
+          <!-- 03 -->
+          <div class="row mb-lg-3 mt-lg-5 justify-content-between">
+            <div class="col-lg-3">
+              <span class="title-02">03</span>
+              <p class="fw-bold fs-3 ms-1">插图</p>
+            </div>
+            <div class="col-lg-2 align-self-end text-end">
+              <p class="fs-4 lh-2">¥800以上</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 mb-3">
+              <div class="border-bottom border-2"></div>
+            </div>
+          </div>
+          <div class="row mb-5 gx-0">
+            <div class="col-lg-8">
+              <div class="row align-items-end">
+                <div class="col-10 px-0">
+                  <img
+                    src="assets/img/pic/Deal/illu1.jpg"
+                    class="img-fluid border border-1 p-lg-3"
+                  />
+                </div>
+                <div class="col-2"><span class="title-02 ms-2">c.</span></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="row align-items-end">
+                <div class="col-6 px-0">
+                  <img
+                    src="assets/img/pic/Deal/illu2.jpg"
+                    class="img-fluid border border-1 p-lg-3"
+                  />
+                </div>
+                <div class="col-2"><span class="title-02 ms-2">d.</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- 文字解释 -->
+          <div class="row mb-lg-5 gx-0">
+            <div class="row row-cols-lg-2 mb-lg-3">
+              <div class="col-lg-6">
+                <p>
+                  完成度如e例图的半身插：仅体现氛围，色块为主，精度低，适用起步价
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <p>……………&nbsp;&nbsp;&nbsp;工期约为5工作日</p>
+              </div>
+              <div class="col-lg-6">
+                <p>完成度如f例图的半身插：精度较高，可带简单背景 2K起</p>
+              </div>
+              <div class="col-lg-4">
+                <p>……………&nbsp;&nbsp;&nbsp;工期+5工作日</p>
+              </div>
+            </div>
+            <div class="row">
+              <p>根据人头数目/构图景别/场景占比的不同此项存在浮动</p>
+            </div>
+          </div>
+        </div>
+        <!-- 流程 -->
+        <div class="row mb-lg-3 mt-lg-5 justify-content-between">
+          <div class="col-lg-3">
+            <span class="title-02">绘制流程</span>
+          </div>
+          <div class="col-lg-2 align-self-end text-end">
+            <p class="fs-4 lh-2">Flow</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 p-0 mb-3">
+            <div class="border-bottom border-2"></div>
+          </div>
+        </div>
 
-</head>
-<body>
-    
-</body>
+        <div class="row gx-0 justify-content-between">
+          <!-- 流程01 -->
+          <div class="col-lg-5">
+            <p class="row fs-3 fw-bold mb-lg-2">服设/人设</p>
+            <div class="row">
+              <p class="col">
+                1.<span class="color-1st">甲方</span
+                >提出需求与参考图，敲定设计风格
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1 vertical-line"></div>
+              <p class="col-11 mini-text">
+                （甲方需支付30%定金 支付日第二天起开始计算创作工时）
+              </p>
+            </div>
+            <div class="row">
+              <p class="col">
+                2.<span class="color-2nd">我方</span>提供站桩草设一到三枚的选择
+                <br /><span class="mini-text"
+                  >（数量根据灵感不同有区分，给得少不意味着敷衍，可能是觉得目前有的方案已优化最高）</span
+                >
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-1 vertical-line"></div>
+            </div>
+            <div class="row">
+              <p class="col">
+                3.<span class="color-1st">甲方</span
+                >选择其中一个草设方向，提出修改意见<span class="mini-text"
+                  >（如加上挑染/腿袜长短/配色更活泼一点等个人喜好的修改）</span
+                >
+                or<span class="color-1st">甲方</span
+                >认为草设方向彻底偏移，皆不符合需求，可重走1、2两步<span
+                  class="mini-text"
+                  >（每次合作限一次）</span
+                >
+                或申请退还定金，此单取消<span class="mini-text"
+                  >（画师保留该次草图所有后续创作权利）</span
+                >
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1 vertical-line"></div>
+              <p class="col-11 mini-text">
+                （草设调整次数为两次，以一段对话框的长文本算作一次）
+              </p>
+            </div>
+            <div class="row">
+              <p class="col">
+                4.<span class="color-1st">甲方</span>确认后，<span
+                  class="color-2nd"
+                  >我方</span
+                >在修改完成草设上细化人物设计 <br /><span class="mini-text"
+                  >（此处细化指为明确服装或配饰结构，并非做光影材质的深入刻画处理，最终完成度以例图为主）</span
+                >
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1 vertical-line"></div>
+              <p class="col-11 mini-text">（细化完成后接受小幅修改一次）</p>
+            </div>
+            <div class="row">
+              <p class="col">
+                5.<span class="color-1st">甲方</span
+                >确认细化完成的设计，可强调必须拆分的部件x1，<span
+                  class="color-2nd"
+                  >我方</span
+                >将一键出图后续的拆分/三视图的部分
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1 vertical-line"></div>
+            </div>
+            <div class="row">
+              <p class="col">
+                6.<span class="color-1st">甲方</span>确认 合作结束 可喜可贺
+              </p>
+            </div>
+          </div>
+          <!-- 流程02 -->
+          <div class="col-lg-5">
+            <p class="row fs-3 fw-bold mb-lg-2">立绘/插图</p>
+            <div class="row">
+              <p class="col">
+                1.<span class="color-1st">甲方</span>提出需求与参考图
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1 vertical-line"></div>
+              <p class="col-11 mini-text">
+                （甲方需支付30%定金 以协定开始日期计算创作工时）
+              </p>
+            </div>
+            <div class="row">
+              <p class="col">
+                2.<span class="color-2nd">我方</span>提供草图二到三张的选择
+                <br /><span class="mini-text"
+                  >（立绘为姿势不同的人物草图，插图为不同构图）</span
+                >
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-1 vertical-line"></div>
+            </div>
+            <div class="row">
+              <p class="col">
+                3.<span class="color-1st">甲方</span>选择其中一张，提出修改意见
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1 vertical-line"></div>
+              <p class="col-11 mini-text">
+                （草设调整次数为两次，以一段对话框的长文本算作一次）
+              </p>
+            </div>
+            <div class="row">
+              <p class="col">
+                4.<span class="color-1st">甲方</span>确认草图，<span
+                  class="color-2nd"
+                  >我方</span
+                >绘制精草-色草
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1 vertical-line"></div>
+              <p class="col-11 mini-text">
+                （精草调整次数为两次 色草阶段调整次数为两次）
+              </p>
+            </div>
+            <div class="row">
+              <p class="col">
+                5.<span class="color-1st">甲方</span>确认后，<span
+                  class="color-2nd"
+                  >我方</span
+                >将从色草一键细化至成图，成图仅接受极小幅度的调整
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1 vertical-line"></div>
+              <p class="col-11 mini-text">
+                （该项业务推崇前期问题前期解决，请勿要把问题留待细化阶段）
+              </p>
+            </div>
+            <div class="row">
+              <p class="col">
+                6.<span class="color-1st">甲方</span>确认 合作结束 可喜可贺
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-space"></div>
+    </div>
+
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

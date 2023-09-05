@@ -1,178 +1,226 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/flat-ui.css" />
+    <link rel="stylesheet" href="assets/css/deal.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- css -->
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="assets/css/flat-ui.css">
-  <link rel="stylesheet" href="assets/css/deal.css">
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- JQuery -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="assets/js/load-parts.js"></script>
+  </head>
 
+  <body>
+    <div class="container d-flex vh-100 align-items-center">
+      <!-- 顶栏 -->
+      <div id="navbar-container"></div>
+      <!-- 标题 -->
+      <div class="row flex-grow-1" style="padding-top: 4rem">
+        <div class="col-4">
+          <div class="head mb-3 mt-0">
+            <h1>我要约稿&nbsp;></h1>
+          </div>
+          <p style="font-size: 0.9rem;">
+            1.画稿时间不固定，希望对每一张稿件负责，
+            故不接受预约超过三个月档期的排单请求
+            <br />2.确认接稿后，没动笔前可随意退单，动笔后因画师个人能力不足的经协商可退部分金额
+            <br />3.绘制过程各个阶段如有不满请大胆提出，本人的乙方服务精神很到位；希望合作过程可以双方多多协商，彼此都有良好的约稿体验
+            <br />4.私人稿件默认可薄水印发出直播中绘制，如有特殊请提前告知
+            <br />5.成品二改二细随意，禁Al投喂；私印10份内无需转商用授权与告知
+            <br />6.如有需要可提供有简单拆分图层的PSD，需要补图/复杂拆分请提前说明并根据情况协商该部分价格
+            <br />7.约稿是生活调剂品，并非必需品，各花入各眼，希望金主量力而行的前提下都能约到喜欢的作品~
+          </p>
+        </div>
+        <div class="col-8 d-flex justify-content-end">
+          <!-- 表单 -->
+          <div class="agilesign-form w-75">
+            <div class="agileits-top">
+              <form
+                action="https://formspree.io/f/mvojrqzv"
+                method="POST"
+              >
+                <!-- 个人信息 -->
+                <div class="input-information">
+                  <div class="styled-input">
+                    <input type="text" name="Name" required="" />
+                    <label>称呼</label>
+                    <span></span>
+                  </div>
+                  <div class="styled-input">
+                    <input type="text" name="Email" required="" />
+                    <label>Email</label>
+                    <span></span>
+                  </div>
+                </div>
+                <!-- 用途 -->
+                <div class="styled-choose">
+                  <label>约稿用途</label>
+                  <label class="radio">
+                    <input
+                      type="radio"
+                      data-toggle="radio"
+                      name="Usage"
+                      id="optionsRadios1"
+                      value="商用"
+                      data-radiocheck-toggle="radio"
+                    />
+                    商用
+                  </label>
+                  <label class="radio">
+                    <input
+                      type="radio"
+                      data-toggle="radio"
+                      name="Usage"
+                      id="optionsRadios2"
+                      value="个人"
+                      data-radiocheck-toggle="radio"
+                    />
+                    个人
+                  </label>
+                </div>
+                <!-- 类型 -->
+                <div class="styled-choose">
+                  <label>约稿类型</label>
+                  <label class="checkbox" for="checkbox1">
+                    <input
+                      type="checkbox"
+                      name="Type"
+                      data-toggle="checkbox"
+                      id="checkbox1"
+                      value="头像"
+                    />
+                    头像
+                  </label>
+                  <label class="checkbox" for="checkbox2">
+                    <input
+                      type="checkbox"
+                      name="Type"
+                      data-toggle="checkbox"
+                      id="checkbox2"
+                      value="立绘"
+                    />
+                    立绘
+                  </label>
+                  <label class="checkbox" for="checkbox3">
+                    <input
+                      type="checkbox"
+                      name="Type"
+                      data-toggle="checkbox"
+                      id="checkbox3"
+                      value="插画"
+                    />
+                    插画
+                  </label>
+                </div>
+                <!-- 稿费 -->
+                <div class="styled-choose">
+                  <label>约稿预算</label>
+                  <select
+                    data-toggle="select"
+                    name="Money1"
+                    class="form-control select select-default"
+                  >
+                    <option value="100">100</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="30000">30000</option>
+                  </select>
+                  <p>~</p>
+                  <select
+                    data-toggle="select"
+                    name="Money2"
+                    class="form-control select select-default"
+                  >
+                    <option value="100">100</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="30000">30000</option>
+                  </select>
+                  <p>RMB</p>
+                </div>
 
-  <!-- JQuery -->
-  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-  <script src="assets/js/load-nav.js"></script>
-
-
-</head>
-
-<body>
-  <div class="page-container">
-    <!-- 顶栏 -->
-    <div id="navbar-container"></div>
-    <!-- 侧边栏 -->
-    <div class="offcanvas offcanvas-end" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </h5>
+                <!-- 详细信息 -->
+                <div class="styled-input w3_styled_input_textarea">
+                  <textarea
+                    type="text"
+                    name="Detail"
+                    required=" "
+                    rows="5"
+                  ></textarea>
+                  <label>详细信息</label>
+                  <span></span>
+                </div>
+                <!-- 提交 -->
+                <input
+                  type="submit"
+                  class="btn btn-primary btn-xs"
+                  value="提交"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- 标题 -->
-    <div class="text">
-      <p>我要约稿&nbsp;></p>
-      <!-- <p>服设/OC：2000-5000 &nbsp&nbsp&nbsp
-        立绘：2500以上 &nbsp&nbsp&nbsp
-        插图：800以上</p> -->
-      <p>1.画稿时间不固定，希望对每一张稿件负责， 故不接受预约超过三个月档期的排单请求
-        <br>2.确认接稿后，没动笔前可随意退单，动笔后因画师个人能力不足的经协商可退部分金额
-        <br>3.绘制过程各个阶段如有不满请大胆提出，本人的乙方服务精神很到位；希望合作过程可以双方多多协商，彼此都有良好的约稿体验
-        <br>4.私人稿件默认可薄水印发出直播中绘制，如有特殊请提前告知
-        <br>5.成品二改二细随意，禁Al投喂；私印10份内无需转商用授权与告知
-        <br>6.如有需要可提供有简单拆分图层的PSD，需要补图/复杂拆分请提前说明并根据情况协商该部分价格
-        <br>7.约稿是生活调剂品，并非必需品，各花入各眼，希望金主量力而行的前提下都能约到喜欢的作品~
-      </p>
-    </div>
-    <!-- 表单 -->
-    <div class="agilesign-form">
-      <div class="agileits-top">
-        <form action="https://formsubmit.co/164578221@qq.com" method="POST">
-          <!-- 个人信息 -->
-          <div class="input-information">
-            <div class="styled-input">
-              <input type="text" name="Name" required="" />
-              <label>称呼</label>
-              <span></span>
-            </div>
-            <div class="styled-input">
-              <input type="text" name="Email" required="" />
-              <label>Email</label>
-              <span></span>
-            </div>
-          </div>
-          <!-- 用途 -->
-          <div class="styled-choose">
-            <label>约稿用途</label>
-            <label class="radio">
-              <input type="radio" data-toggle="radio" name="Usage" id="optionsRadios1" value="商用"
-                data-radiocheck-toggle="radio">
-              商用
-            </label>
-            <label class="radio">
-              <input type="radio" data-toggle="radio" name="Usage" id="optionsRadios2" value="个人"
-                data-radiocheck-toggle="radio">
-              个人
-            </label>
-          </div>
-          <!-- 类型 -->
-          <div class="styled-choose">
-            <label>约稿类型</label>
-            <label class="checkbox" for="checkbox1">
-              <input type="checkbox" name="Type" data-toggle="checkbox" id="checkbox1" value="头像">
-              头像
-            </label>
-            <label class="checkbox" for="checkbox2">
-              <input type="checkbox" name="Type" data-toggle="checkbox" id="checkbox2" value="立绘">
-              立绘
-            </label>
-            <label class="checkbox" for="checkbox3">
-              <input type="checkbox" name="Type" data-toggle="checkbox" id="checkbox3" value="插画">
-              插画
-            </label>
-          </div>
-          <!-- 稿费 -->
-          <div class="styled-choose">
-            <label>约稿预算</label>
-            <select data-toggle="select" name="Money1" class="form-control select select-default">
-              <option value="100">100</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-              <option value="30000">30000</option>
-            </select>
-            <p>~</p>
-            <select data-toggle="select" name="Money2" class="form-control select select-default">
-              <option value="100">100</option>
-              <option value="500">500</option>
-              <option value="1000">1000</option>
-              <option value="30000">30000</option>
-            </select>
-            <p>RMB</p>
-          </div>
 
-          <!-- 详细信息 -->
-          <div class="styled-input w3_styled_input_textarea">
-            <textarea type="text" name="Detail" required=" " rows="5"></textarea>
-            <label>详细信息</label>
-            <span></span>
-          </div>
-          <!-- 提交 -->
-          <input type="submit" class="btn btn-primary btn-xs" value="提交">
-        </form>
-      </div>
-      <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
-      <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
-      <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
-      <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
-      <script src="assets/js/main.js"></script>
+    <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-      <!-- flat-ui -->
-      <script src="assets/js/flat-ui.min.js"></script>
-      <script src="assets/js/application.js"></script>
-      <script>
+    <!-- flat-ui -->
+    <script src="assets/js/flat-ui.min.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+      $('button:not([type="submit"])').on("click", function (e) {
+        var $this = $(this);
 
+        if (!!$this.attr("data-radiocheck-check")) {
+          var el = $this.attr("data-radiocheck-check");
+          $(el).radiocheck("check");
+        } else if (!!$this.attr("data-radiocheck-uncheck")) {
+          var el = $this.attr("data-radiocheck-uncheck");
+          $(el).radiocheck("uncheck");
+        } else if (!!$this.attr("data-radiocheck-toggle")) {
+          var el = $this.attr("data-radiocheck-toggle");
+          $(el).radiocheck("toggle");
+        } else if (!!$this.attr("data-radiocheck-indeterminate")) {
+          var el = $this.attr("data-radiocheck-indeterminate");
+          $(el).radiocheck("indeterminate");
+        } else if (!!$this.attr("data-radiocheck-determinate")) {
+          var el = $this.attr("data-radiocheck-determinate");
+          $(el).radiocheck("determinate");
+        } else if (!!$this.attr("data-radiocheck-disable")) {
+          var el = $this.attr("data-radiocheck-disable");
+          $(el).radiocheck("disable");
+        } else if (!!$this.attr("data-radiocheck-enable")) {
+          var el = $this.attr("data-radiocheck-enable");
+          $(el).radiocheck("enable");
+        } else if (!!$this.attr("data-radiocheck-destroy")) {
+          var el = $this.attr("data-radiocheck-destroy");
+          $(el).radiocheck("destroy");
+        } else if (!!$this.attr("data-radiocheck-init")) {
+          var el = $this.attr("data-radiocheck-init");
+          $(el).radiocheck();
+        }
 
-        $('button:not([type="submit"])').on('click', function (e) {
-          var $this = $(this);
-
-          if (!!$this.attr('data-radiocheck-check')) {
-            var el = $this.attr('data-radiocheck-check');
-            $(el).radiocheck('check');
-          } else if (!!$this.attr('data-radiocheck-uncheck')) {
-            var el = $this.attr('data-radiocheck-uncheck');
-            $(el).radiocheck('uncheck');
-          } else if (!!$this.attr('data-radiocheck-toggle')) {
-            var el = $this.attr('data-radiocheck-toggle');
-            $(el).radiocheck('toggle');
-          } else if (!!$this.attr('data-radiocheck-indeterminate')) {
-            var el = $this.attr('data-radiocheck-indeterminate');
-            $(el).radiocheck('indeterminate');
-          } else if (!!$this.attr('data-radiocheck-determinate')) {
-            var el = $this.attr('data-radiocheck-determinate');
-            $(el).radiocheck('determinate');
-          } else if (!!$this.attr('data-radiocheck-disable')) {
-            var el = $this.attr('data-radiocheck-disable');
-            $(el).radiocheck('disable');
-          } else if (!!$this.attr('data-radiocheck-enable')) {
-            var el = $this.attr('data-radiocheck-enable');
-            $(el).radiocheck('enable');
-          } else if (!!$this.attr('data-radiocheck-destroy')) {
-            var el = $this.attr('data-radiocheck-destroy');
-            $(el).radiocheck('destroy');
-          } else if (!!$this.attr('data-radiocheck-init')) {
-            var el = $this.attr('data-radiocheck-init');
-            $(el).radiocheck();
-          }
-
-          e.preventDefault();
-        });
-
-      </script>
-
-
+        e.preventDefault();
+      });
+    </script>
+  </body>
 </html>

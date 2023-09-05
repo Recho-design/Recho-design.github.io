@@ -2,23 +2,123 @@
   font-family: "标小智无界黑";
   src: url(/assets/fonts/标小智无界黑.ttf);
 }
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 html {
   font-size: 1rem;
 }
 body {
-  background-color: #1a1a1a;
+  background-color: #333333;
 }
 a {
   text-decoration: none;
 }
-.page-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  height: 100vh;
-  z-index: 998;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 .bg-1st {
   background-color: #6a50ff;
+}
+.bg-2nd {
+  background-color: #e0ff70;
+}
+.color-1st {
+  color: #6a50ff;
+}
+.color-2nd {
+  color: #e0ff70;
+}
+.color-3rd {
+  color: #333333;
+}
+.color-4th {
+  color: white;
+}
+.font-1st {
+  font-family: "标小智无界黑";
+}
+.nav-tab,
+.nav-link {
+  font-family: "标小智无界黑";
+  color: white;
+}
+.logo {
+  font-family: "标小智无界黑";
+  color: white;
+  font-size: 2rem;
+}
+.head {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  /* 在容器内平均分布空间 */
+  align-items: center;
+  /* 垂直居中对齐 */
+}
+h1 {
+  font-family: "标小智无界黑";
+  font-size: 5rem;
+  color: white;
+  font-weight: 400;
+}
+.title-02 {
+  font: 4rem "标小智无界黑";
+}
+label {
+  color: white;
+}
+.bottom-space {
+  width: 100%;
+  min-height: 15rem;
+  /* 自定义底部空间大小 */
+}
+.row > * {
+  padding: 0;
+}
+.col-* {
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  margin: 0;
+  padding: 0;
+}
+.mini-text {
+  font-size: 0.6rem;
+}
+.count {
+  height: 13rem;
+  width: 13rem;
+  position: fixed;
+  right: 0;
+  bottom: 5rem;
+}
+.count img {
+  position: absolute;
+}
+.count p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  color: #333333;
+}
+.count span {
+  font: 2rem "标小智无界黑";
+  color: #e0ff70;
+  -webkit-text-stroke: 0.1rem #333333;
+  /* 描边效果，2px 为描边宽度，black 为描边颜色 */
 }

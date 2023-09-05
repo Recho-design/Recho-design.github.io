@@ -1,28 +1,156 @@
-@import "font.less";
-@import "color.less";
+@font-face {
+  font-family: "标小智无界黑";
+  src: url(/assets/fonts/标小智无界黑.ttf);
+}
 
+@font-1st: "标小智无界黑";
+@font-size: 1rem;
+
+@color-background: #1a1a1a;
+@color-1st: #6a50ff;
+@color-2nd: #e0ff70;
+@color-3rd: #333333;
+@color-4th: white;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 html {
-    font-size: @font-size;
+  font-size: @font-size;
 }
 
 body {
-    background-color: @color-background;
+  background-color: @color-3rd;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.page-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 100vh;
-    z-index: 998;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: @color-4th;
 }
 
+// 颜色选择
 .bg-1st {
-    background-color: @color-1st;
+  background-color: @color-1st;
+}
+.bg-2nd {
+  background-color: @color-2nd;
+}
+
+.color-1st {
+  color: @color-1st;
+}
+
+.color-2nd {
+  color: @color-2nd;
+}
+.color-3rd {
+  color: @color-3rd;
+}
+.color-4th {
+  color: @color-4th;
+}
+
+.font-1st {
+  font-family: @font-1st;
+}
+// 特殊字体样式
+.nav-tab , .nav-link{
+  font-family: @font-1st;
+  color: @color-4th;
+}
+.logo{
+  font-family: @font-1st;
+  color: @color-4th;
+  font-size: 2rem;
+}
+// 常用预设
+.head {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  /* 在容器内平均分布空间 */
+  align-items: center;
+  /* 垂直居中对齐 */
+}
+
+h1 {
+  font-family: @font-1st;
+  font-size: 5rem;
+  color: @color-4th;
+  font-weight: 400;
+}
+
+.title-02 {
+  font: 4rem @font-1st;
+}
+
+label{
+  color: white;
+}
+
+.bottom-space {
+  width: 100%;
+  min-height: 15rem; /* 自定义底部空间大小 */
+}
+
+// 覆盖bootstrap
+.row > * {
+  padding: 0;
+}
+
+.col-* {
+  padding: 0;
+}
+// 文字优化
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.mini-text {
+  font-size: 0.6rem;
+}
+
+// 计数浮窗
+.count {
+  height: 13rem;
+  width: 13rem;
+  position: fixed;
+  right: 0;
+  bottom: 5rem;
+}
+
+.count img {
+  position: absolute;
+}
+
+.count p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  color: @color-3rd;
+}
+
+.count span {
+  font: 2rem @font-1st;
+  color: @color-2nd;
+  -webkit-text-stroke: 0.1rem @color-3rd; /* 描边效果，2px 为描边宽度，black 为描边颜色 */
 }
